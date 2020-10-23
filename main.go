@@ -28,5 +28,11 @@ func main() {
 
 	r := mux.NewRouter()
 	r.HandleFunc("/", home).Methods("GET")
+
+	// Assets
+	assetHandler := http.FileServer(http.Dir("./assets/"))
+	assetHandler = http.StripPrefix("/assets/", assetHandler)
+	r.PathPrefix("/assets/").Handler(assetHandler)
+
 	http.ListenAndServe(":3000", r)
 }

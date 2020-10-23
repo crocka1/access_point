@@ -1,1 +1,125 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link type="text/css" href="/assets/fontawesome/css/all.css" rel="stylesheet">
+<style>
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: block;
+    font-family: Ubuntu-Regular,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-family: "Quicksand", sans-serif;
+    background-color: #f2f6f9;
+    margin: auto;
+    padding: 0 15px 0 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+  max-width: 1200px;
+  margin: auto;
+  grid-gap: 2rem;
+}
+
+.grid-container > div {
+  border: 3px solid white;
+  text-align: center;
+  padding: 20px 0;
+  padding: 72px 0 0 0;
+}
+
+.grid-container > div:hover {
+ 
+  border-bottom-style: solid;
+  border-bottom-color: #ff7a59;
+}
+
+.card {
+  padding: 40px 10px;
+  background-color: white;
+  color: black;
+  height: 15rem;
+  width: auto;
+  font-size: 1.318em;
+  font-weight: 700;
+  -webkit-box-shadow: 12px 12px 36px -8px rgba(0,0,0,0.25);
+-moz-box-shadow: 12px 12px 36px -8px rgba(0,0,0,0.25);
+box-shadow: 12px 12px 36px -8px rgba(0,0,0,0.25);
+}
+
+.card > p {
+margin: 0px 0 0 0;
+}
+
+.font{
+font-size: 4.318em;
+vertical-align: middle;
+margin: 0 auto 28px;
+}
+
+.svg {
+  width: 100px;
+  height: 82px;
+  margin: 0 auto 28px;
+}
+
+.item11 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.item12 {
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+</style>
+</head>
+<body>
+
+<h1>Awesome Grid Lines CSS -:)</h1>
+
+<div class="grid-container">
+  <div class="card">
+    <img class="svg" src="/assets/icons/Apps-Lock-Ok.svg" alt="Apps-Lock-Ok.svg">
+    <p>Запрос на доступ</p>
+    <p>SAP\BW</p>
+  </div>
+  <div class="card">
+    <i class="fas fa-user-lock font"></i>
+    <p>Сбросить пароль</p>
+  </div>
+   <div class="card">
+    <i class="far fa-user font"></i>
+    <p>Список ключевых пользователей</p>
+   </div>  
+  <div class="card">
+  <i class="fas fa-tasks font"></i>
+  <p>Каталог SAP ролей</p>
+  </div>
+    <div class="card">
+    <i class="fas fa-book-reader font"></i>
+    <p>Библиотека рисков</p>
+    </div>
+  <div class="card">
+    <img class="svg" src="/assets/icons/vpn_lock-24px.svg" alt="vpn_lock-24px.svg">
+    <p>Аудит полномочий</p>
+  </div>
+  <div class="card">
+  <i class="fas fa-book font"></i>
+  <p>База знаний</p>
+  </div>
+  <div class="card">
+  <i class="fas fa-user font"></i>
+  <p>Сотрудники</p>
+  <p>SAP FBCIS</p>
+  </div>  
+</div>
+</body>
+</html>
